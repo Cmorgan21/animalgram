@@ -1,0 +1,41 @@
+.Post {
+  background-color: #047555;
+  border: 2px solid #b08d79 ;
+  border-radius: 2px;
+  margin-bottom: 16px;
+  text-align: center;
+  color: white;
+}
+
+.Post figure,
+h5 {
+  margin: 0 0;
+}
+
+.Heart {
+  color: #f85032;
+}
+
+.Heart:hover {
+  color: #2142b2;
+}
+
+.HeartOutline:hover {
+  color: #f85032;
+}
+
+.Post i:hover {
+  color: #b08d79
+}
+
+.UserName {
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.UserName:hover {
+  color: white;
+  text-decoration: none;
+}
+
