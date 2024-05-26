@@ -1,0 +1,99 @@
+/* SearchPage.module.css */
+.container {
+}
+
+.SearchBar input {
+  border-radius: 20px;
+  color: #242a3d;
+  padding-left: 40px;
+  margin-bottom: 16px;
+}
+
+.SearchIcon {
+  position: absolute;
+  font-size: 1.2rem;
+  padding: 9px;
+  padding-left: 15px;
+}
+
+.SearchIcon:hover {
+  cursor: pointer;
+}
+
+.SearchBar {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.GridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+}
+
+.PostCard {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.PostCard:hover {
+  transform: scale(1.04);
+}
+
+.PostImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.PostContent {
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.PostContent a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.PostContent a span {
+  margin-left: 10px;
+  color: #000;
+  text-decoration: none;
+}
+
+.PostContent a:hover span {
+  text-decoration: underline;
+}
+
+.PostBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Heart {
+  color: red;
+}
+
+.HeartOutline {
+  color: gray;
+}
+
+@media (max-width: 400px) {
+  .GridContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 100%;
+  }
+  
+}
