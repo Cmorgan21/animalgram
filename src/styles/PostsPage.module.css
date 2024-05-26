@@ -1,0 +1,97 @@
+.Container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; 
+  text-align: center;
+}
+
+.Content {
+  max-width: 800px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.SearchBar {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.SearchBar input {
+  border-radius: 20px;
+  color: #242a3d;
+  padding-left: 40px;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.SearchIcon {
+  position: absolute;
+  font-size: 1.2rem;
+  padding: 9px;
+  padding-left: 15px;
+}
+
+.SearchIcon:hover {
+  cursor: pointer;
+}
+
+.GridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  width: 100%;
+}
+
+.PostCard {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.PostCard:hover {
+  transform: scale(1.05);
+}
+
+.PostImageContainer {
+  width: 100%;
+  padding-bottom: 100%;
+  position: relative;
+}
+
+.PostImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.PostContent {
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.PostContent a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.PostContent a span {
+  margin-left: 10px;
+  color: #000;
+  text-decoration: none;
+}
+
+.PostContent a:hover span {
+  text-decoration: underline;
+}
