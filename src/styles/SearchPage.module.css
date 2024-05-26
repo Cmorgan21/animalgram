@@ -1,7 +1,3 @@
-/* SearchPage.module.css */
-.container {
-}
-
 .SearchBar input {
   border-radius: 20px;
   color: #242a3d;
@@ -95,5 +91,5 @@
     gap: 10px;
     width: 100%;
   }
-  
+
 }
