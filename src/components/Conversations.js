@@ -1,6 +1,6 @@
-// Conversations.js
 import React, { useEffect, useState } from 'react';
 import { getConversations } from '../api/api';
+import StartConversation from './StartConversation';
 
 const Conversations = ({ onSelectConversation }) => {
     const [conversations, setConversations] = useState([]);
@@ -18,9 +18,14 @@ const Conversations = ({ onSelectConversation }) => {
         fetchConversations();
     }, []);
 
+    const handleConversationCreated = (newConversation) => {
+        setConversations([...conversations, newConversation]);
+    };
+
     return (
         <div>
             <h1>Conversations</h1>
+            <StartConversation onConversationCreated={handleConversationCreated} />
             <ul>
                 {conversations.map(conversation => (
                     <li key={conversation.id} onClick={() => onSelectConversation(conversation)}>

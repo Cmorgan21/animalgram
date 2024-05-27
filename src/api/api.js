@@ -1,4 +1,3 @@
-// src/services/api.js
 import { axiosReq } from '../api/axiosDefaults';
 
 export const getConversations = async () => {
@@ -30,6 +29,16 @@ export const sendMessage = async (conversationId, message) => {
         return response.data;
     } catch (error) {
         console.error('Error sending message:', error);
+        throw error;
+    }
+};
+
+export const createConversation = async (conversationData) => {
+    try {
+        const response = await axiosReq.post('/conversations/', conversationData);
+        return response.data;
+    } catch (error) {
+        console.error('Error creating conversation:', error);
         throw error;
     }
 };
