@@ -19,6 +19,8 @@ import UserPasswordForm from "./pages/profiles/UserPasswordForm";
 import ProfileEditForm from "./pages/profiles/ProfileEditForm";
 import NotFound from "./components/NotFound";
 import SearchPage from "./components/SearchPage";
+import Conversations from "./components/Conversations";
+import Messages from "./components/Messages";
 
 function App() {
   const currentUser = useCurrentUser();
@@ -79,6 +81,12 @@ function App() {
           />
           <Route exact path="/search" render={() => <SearchPage />} />
           <Route exact path="/about" render={() => <AboutPage />} />
+          <Route exact path="/conversations" render={() => <Conversations />} />
+          <Route
+            exact
+            path="/conversations/:id/messages"
+            render={(props) => <Messages conversationId={props.match.params.id} />}
+          />
           <Route render={() => <NotFound />} />
         </Switch>
       </Container>

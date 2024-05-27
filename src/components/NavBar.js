@@ -41,6 +41,16 @@ const NavBar = () => {
     </NavLink>
   );
 
+  const conversationsIcon = (
+    <NavLink
+      className={styles.NavLink}
+      activeClassName={styles.Active}
+      to="/conversations"
+    >
+      <i className="fas fa-comments"></i>Conversations
+    </NavLink>
+  );
+
   const loggedInIcons = (
     <>
       <NavLink
@@ -57,6 +67,7 @@ const NavBar = () => {
       >
         <i className="fas fa-heart"></i>Liked
       </NavLink>
+      {conversationsIcon}
       <NavLink className={styles.NavLink} to="/" onClick={handleSignOut}>
         <i className="fas fa-sign-out-alt"></i>Sign out
       </NavLink>
