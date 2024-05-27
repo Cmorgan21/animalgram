@@ -1,16 +1,26 @@
 import React, { useState } from 'react';
 import { createConversation } from '../api/api';
+import UserSearch from './UserSearch';
 
 const StartConversation = ({ onConversationCreated }) => {
-    const [participants, setParticipants] = useState('');
+    const [participants, setParticipants] = useState([]);
     const [error, setError] = useState(null);
+
+    const handleUserSelect = (username) => {
+        if (!participants.includes(username)) {
+            setParticipants([...participants, username]);
+        }
+    };
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-        const participantsArray = participants.split(',').map(username => username.trim());
+        if (participants.length < 2) {
+            setError('At least two participants are required');
+            return;
+        }
 
         try {
-            const newConversation = await createConversation({ participants: participantsArray });
+            const newConversation = await createConversation({ participants });
             onConversationCreated(newConversation);
         } catch (error) {
             setError('Error creating conversation. Please try again.');
@@ -21,15 +31,13 @@ const StartConversation = ({ onConversationCreated }) => {
     return (
         <div>
             <h2>Start a New Conversation</h2>
+            <UserSearch onSelectUser={handleUserSelect} />
+            <ul>
+                {participants.map((participant, index) => (
+                    <li key={index}>{participant}</li>
+                ))}
+            </ul>
             <form onSubmit={handleSubmit}>
-                <label>
-                    Participants (comma separated usernames):
-                    <input
-                        type="text"
-                        value={participants}
-                        onChange={(e) => setParticipants(e.target.value)}
-                    />
-                </label>
                 <button type="submit">Start Conversation</button>
             </form>
             {error && <p>{error}</p>}

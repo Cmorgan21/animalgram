@@ -42,3 +42,13 @@ export const createConversation = async (conversationData) => {
         throw error;
     }
 };
+
+export const searchUsers = async (query) => {
+    try {
+        const response = await axiosReq.get(`/search/users/?q=${query}`);
+        return response.data;
+    } catch (error) {
+        console.error('Error searching users:', error);
+        throw error;
+    }
+};
