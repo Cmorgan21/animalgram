@@ -10,8 +10,6 @@
   z-index: 99;
 }
 
-.fas,
-.far,
-.fa {
+.dropdown-icons i {
   color: black;
 }
