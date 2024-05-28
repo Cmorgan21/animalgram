@@ -19,6 +19,7 @@ import UserPasswordForm from "./pages/profiles/UserPasswordForm";
 import ProfileEditForm from "./pages/profiles/ProfileEditForm";
 import NotFound from "./components/NotFound";
 import SearchPage from "./components/SearchPage";
+import ChatApp from "./components/ChatApp";
 
 function App() {
   const currentUser = useCurrentUser();
@@ -79,6 +80,7 @@ function App() {
           />
           <Route exact path="/search" render={() => <SearchPage />} />
           <Route exact path="/about" render={() => <AboutPage />} />
+          <Route exact path="/chat" render={() => <ChatApp />} />  {/* Add ChatApp route */}
           <Route render={() => <NotFound />} />
         </Switch>
       </Container>
