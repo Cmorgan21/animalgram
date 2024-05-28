@@ -26,6 +26,7 @@ const NavBar = () => {
       await axios.post("dj-rest-auth/logout/");
       setCurrentUser(null);
       removeTokenTimestamp();
+      history.push('/signin');
     } catch (err) {
       // Handle error
     }
@@ -38,16 +39,6 @@ const NavBar = () => {
       to="/posts/create"
     >
       <i className="far fa-plus-square"></i>Add post
-    </NavLink>
-  );
-
-  const conversationsIcon = (
-    <NavLink
-      className={styles.NavLink}
-      activeClassName={styles.Active}
-      to="/chat"
-    >
-      <i className="fas fa-comments"></i>Conversations
     </NavLink>
   );
 
@@ -67,7 +58,6 @@ const NavBar = () => {
       >
         <i className="fas fa-heart"></i>Liked
       </NavLink>
-      {conversationsIcon}
       <NavLink className={styles.NavLink} to="/" onClick={handleSignOut}>
         <i className="fas fa-sign-out-alt"></i>Sign out
       </NavLink>
