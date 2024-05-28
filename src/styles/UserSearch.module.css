@@ -1,0 +1,31 @@
+.user-search {
+    width: 100%;
+}
+
+.user-search input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.search-results {
+    list-style-type: none;
+    padding: 0;
+    background-color: #222;
+    border-radius: 8px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.search-results li {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.search-results li:hover {
+    background-color: #444;
+}

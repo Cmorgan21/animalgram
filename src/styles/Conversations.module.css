@@ -1,0 +1,66 @@
+.conversations-container {
+    background-color: #000;
+    color: #fff;
+    padding: 16px;
+}
+
+.conversations-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conversations-search {
+    margin: 16px 0;
+}
+
+.conversations-search input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+}
+
+.conversations-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.conversation-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #333;
+    cursor: pointer;
+}
+
+.conversation-item:hover {
+    background-color: #222;
+}
+
+.conversation-avatar img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.conversation-info {
+    flex: 1;
+    padding: 0 16px;
+}
+
+.conversation-participants {
+    display: block;
+    font-weight: bold;
+}
+
+.conversation-last-message {
+    display: block;
+    color: #888;
+}
+
+.conversation-time {
+    color: #888;
+}

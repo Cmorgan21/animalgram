@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { createConversation } from '../api/api';
 import UserSearch from './UserSearch';
+import '../styles/StartConversation.module.css';
 
 const StartConversation = ({ onConversationCreated }) => {
     const [participants, setParticipants] = useState([]);
@@ -29,10 +30,9 @@ const StartConversation = ({ onConversationCreated }) => {
     };
 
     return (
-        <div>
-            <h2>Start a New Conversation</h2>
+        <div className="start-conversation">
             <UserSearch onSelectUser={handleUserSelect} />
-            <ul>
+            <ul className="selected-participants">
                 {participants.map((participant, index) => (
                     <li key={index}>{participant}</li>
                 ))}

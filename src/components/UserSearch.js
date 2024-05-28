@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { searchUsers } from '../api/api';
+import '../styles/UserSearch.module.css';
 
 const UserSearch = ({ onSelectUser }) => {
     const [query, setQuery] = useState('');
@@ -21,7 +22,7 @@ const UserSearch = ({ onSelectUser }) => {
     };
 
     return (
-        <div>
+        <div className="user-search">
             <input
                 type="text"
                 value={query}
@@ -29,7 +30,7 @@ const UserSearch = ({ onSelectUser }) => {
                 placeholder="Search for users"
             />
             {results.length > 0 && (
-                <ul>
+                <ul className="search-results">
                     {results.map((user, index) => (
                         <li key={index} onClick={() => onSelectUser(user)}>
                             {user}
