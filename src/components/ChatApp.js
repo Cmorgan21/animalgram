@@ -1,4 +1,4 @@
-// src/pages/chat/ChatApp.js
+// src/components/ChatApp.js
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import ConversationList from './ConversationList';
@@ -36,7 +36,10 @@ const ChatApp = () => {
           {showCreateConversation ? (
             <CreateConversation onConversationCreated={handleConversationCreated} />
           ) : (
-            <ConversationList onSelectConversation={setSelectedConversation} conversations={conversations} />
+            <ConversationList
+              onSelectConversation={setSelectedConversation}
+              conversations={conversations}
+            />
           )}
         </Col>
         <Col md={8}>

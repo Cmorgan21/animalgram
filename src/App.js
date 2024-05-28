@@ -80,7 +80,7 @@ function App() {
           />
           <Route exact path="/search" render={() => <SearchPage />} />
           <Route exact path="/about" render={() => <AboutPage />} />
-          <Route exact path="/chat" render={() => <ChatApp />} />  {/* Add ChatApp route */}
+          <Route exact path="/chat" render={() => <ChatApp />} />
           <Route render={() => <NotFound />} />
         </Switch>
       </Container>

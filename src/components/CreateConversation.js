@@ -1,6 +1,5 @@
-// src/components/CreateConversation.js
 import React, { useState } from 'react';
-import { Form, Button } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import { axiosReq } from '../api/axiosDefaults';
 import UserSearch from './UserSearch';
 
@@ -13,10 +12,14 @@ const CreateConversation = ({ onConversationCreated }) => {
 
   const handleCreateConversation = async () => {
     if (selectedUsers.length > 0) {
-      const { data } = await axiosReq.post('/conversations/', {
-        participants: selectedUsers,
-      });
-      onConversationCreated(data);
+      try {
+        const { data } = await axiosReq.post('/conversations/', {
+          participants: selectedUsers,
+        });
+        onConversationCreated(data);
+      } catch (error) {
+        console.error("Failed to create conversation:", error);
+      }
     }
   };
 

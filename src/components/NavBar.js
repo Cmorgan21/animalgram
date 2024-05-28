@@ -45,7 +45,7 @@ const NavBar = () => {
     <NavLink
       className={styles.NavLink}
       activeClassName={styles.Active}
-      to="/conversations"
+      to="/chat"
     >
       <i className="fas fa-comments"></i>Conversations
     </NavLink>
