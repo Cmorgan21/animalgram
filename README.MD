@@ -30,3 +30,9 @@ View the live project [AnimalGram](https://animalgram-880788cab506.herokuapp.com
 - [Credits](#credits)
 
 ## UX
+
+
+## The Strategy Plane
+
+### Project Objective
+The objective of this project is to build a content-sharing web application for animal enthusiasts, allowing users to connect, share their pet's moments, and interact with the published content. The platform allows users to view, create, edit, delete, like, and comment on posts. Users can also view, create, and edit their own profiles, follow each other, and engage with others' shared content.
