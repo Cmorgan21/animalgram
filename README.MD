@@ -390,3 +390,55 @@ To understand the relationships between these models, please refer to the Entity
 ![Entity Relationship Diagram](https://res.cloudinary.com/dbjm35bjd/image/upload/v1717014871/er_diagram_1_hcli7m.png)
 
 ER Diagram
+
+## The Surface Plane
+
+### Design
+
+#### Colour Scheme
+
+The "Animal Gram" project incorporates a distinct color scheme to reflect its unique identity and mission. These carefully selected colors are inspired by nature and animals, emphasizing the platform's dedication to animal lovers.
+
+- **Color 1:** #b08d79
+- **Color 2:** #047555
+- **Color 3:** #fff
+
+It is very naturistic and natural colors resonating with Animals and has a very welcoming tone. 
+
+![Colour Pallette](https://res.cloudinary.com/dbjm35bjd/image/upload/v1717018442/Screenshot_2024-05-29_at_22.33.34_dfbevu.png)
+
+
+The logo was created with [Canva](https://canva.com)
+
+![Logo](https://res.cloudinary.com/dbjm35bjd/image/upload/v1717013198/AnimalGram_Logo_ylfznd.png)
+
+This is a themed logo with themed colors to resonate with the website and give a uniform look
+
+![Logo]()
+    
+#### Typography
+
+
+#### Typography
+
+In the "Animal Gram" project, the fonts "DM Sans" and "Lobster" have been thoughtfully chosen to enhance the visual aesthetics and readability of the platform.
+
+- **DM Sans**, sans-serif
+- **Lobster**, sans-serif
+
+These fonts are sourced from [Google Fonts](https://fonts.google.com/).
+
+**DM Sans** is a modern and highly legible font. Its clean, geometric design offers exceptional clarity and readability, making it accessible to a wide audience. DM Sans also gives a very sophisticated look and makes the website look professional
+
+**Lobster** adds a touch of elegance and uniqueness to the design. Its playful and cursive style provides a distinctive look that enhances the overall aesthetic appeal of the platform.
+    
+#### Imagery
+
+- The illustrations used across the app were generated using [Canva](https://canva.com). 
+
+- I picked this illustration set for their artfulness, playful tone, and appropriate subject matter - I then color-edited them to the app's color scheme.
+
+- The images for the posts and profiles created on the website were sourced from [Unsplash](https://unsplash.com/)
+
+
+- The icons were imported from [Font Awesome](https://fontawesome.com/).
