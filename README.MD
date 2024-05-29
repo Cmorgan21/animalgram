@@ -666,3 +666,21 @@ Instead, we add the link to the DATABASE_URL that we added to the environment fi
 27. Now it's time for deployment. Scroll to the top of the settings page in Heroku and click the 'Deploy' tab. For deployment method, select 'Github'. Search for the repository name you want to deploy and then click connect.
 
 28. Scroll down to the manual deployment section and click 'Deploy Branch'. Hopefully the deployment is successful!
+
+### Cloning And Setting Up This Project
+
+To clone and set up this project you need to follow the steps below.
+
+1. When you are in the repository, find the code tab and click it.
+2. To the left of the green GitPod button, press the 'code' menu. There you will find a link to the repository. Click on the clipboard icon to copy the URL.
+3. Use an IDE and open Git Bash. Change directory to the location where you want the cloned directory to be made.
+4. Type 'git clone', and then paste the URL that you copied from GitHub. Press enter and a local clone will be created.
+5. To be able to get the project to work you need to install the requirements. This can be done by using the command below:
+
+- `pip3 install -r requirements.txt` - This command downloads and installs all required dependencies that is stated in the requirements file.
+
+6. The next step is to set up the environment file so that the project knows what variables that needs to be used for it to work. Environment variables are usually hidden due to sensitive information. It's very important that you don't push the env.py file to Github (this can be secured by adding env.py to the .gitignore-file). The variables that are declared in the env.py file needs to be added to the Heroku config vars. Ensure to do migrations before trying to run the server.
+
+- ````python3 manage.py migrate```` - This will do the necessary migrations.
+- `python3 manage.py runserver` - If everything i setup correctly the project is now live locally.
+
