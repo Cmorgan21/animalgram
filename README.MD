@@ -162,4 +162,14 @@ Subsequently, the “should-have” features were addressed, followed by the inc
 |--------------|-------------------------------------------------------------------------------------------------|-----------|
 | Implement Search Functionality | As an account holder or guest of the website, I can search for posts based on the text content of the posts. | [X]  |
 | View a Grid of Posts | Users can search for posts and view a collective grid of all posts, ordered from newest at the top to oldest at the bottom. | [X]  |
-| User Post and Picture | From the search page, a user can see the post, profile picture of the posted user, and the title of the post. | []  |
+| User Post and Picture | From the search page, a user can see the post, profile picture of the posted user, and the title of the post. | [X]  |
+
+### Future Implementations
+
+| Category     | User Story                                                                                     | Completed |
+|--------------|-------------------------------------------------------------------------------------------------|-----------|
+| Filter Posts by Category | In my role as a developer/superuser, I can enable category-based post filtering, allowing users to view posts related to a specific category. | [X]  |
+| Posts based on Liked History | Provide users with posts similar to the ones they frequently like to give them more suggested content. | [X]  |
+| View Followed Profiles Content | Being a developer/superuser, I can provide a feature that allows users to see posts exclusively from profiles they follow. | [X]  |
+| Chat Functionality | As a developer/superuser, I can implement chat functionality, enabling users to communicate with each other and message in real time. |
+
