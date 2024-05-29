@@ -184,3 +184,161 @@ For logged-out users, the navigation bar provides access to the Home, About, Sig
 The transition to a logged-in state empowers users with the ability to perform actions beyond the scope of logged-out users:
 Logged-in users can create posts, modify their profile details, including their username and password, manage their comments, express their preference for posts through likes and unlikes, and expand their network by following or unfollowing other users.
 
+## Features
+
+### Navigation
+
+The navigation bar boasts an elegant and minimalist design, ensuring an exceptional user experience. Its appearance dynamically adapts based on your authentication status. On tablets and mobile devices, the navigation bar transforms into a user-friendly hamburger menu. 
+
+![AnimalGramNavLoggedout](https://res.cloudinary.com/dbjm35bjd/image/upload/v1717013073/Screenshot_2024-05-29_at_20.58.07_axell9.png)
+
+When a user is logged out, the following menu items are readily accessible:
+
+- **Animal Gram Logo:** This logo serves as a constant presence across the site, providing all users with a convenient link back to the homepage.
+- **Home:** Users can navigate to the "Home" section, where a diverse array of posts populates the platform.
+- **About:** This link directs users to the "About" page, where they can gain deeper insights into the platform's mission and purpose.
+- **Search:** This will allow users to view posts from newest to oldest in a grid-like format. With the user, user post, and post title.
+- **Authentication:** For quick access, the "Sign In" and "Sign Up" icons are prominently displayed, offering seamless entry into the respective authentication processes.
+
+When a user is logged in, a range of additional options becomes accessible:
+
+![AnimalGramNavLoggedin](https://res.cloudinary.com/dbjm35bjd/image/upload/v1717013066/Screenshot_2024-05-29_at_20.59.49_ncy6zu.png)
+
+- **Feed:** Logged-in users have access to a dynamic dropdown menu, allowing them to navigate to the "Feed" page, which includes posts. Here, they can explore content from profiles they follow, view posts they've liked, and manage their profile.
+![Feed](https://res.cloudinary.com/dbjm35bjd/image/upload/v1717013073/Screenshot_2024-05-29_at_21.03.27_qdn6ea.png)
+
+
+- **Authentication:** The authentication icons transform as well. Instead of displaying "Sign In" and "Sign Up" options, they now feature a direct link to the user's profile page and a convenient "Sign Out" option to exit the site.
+
+- **Add Post:** For users who are logged in, links to create new posts are readily accessible.
+
+![AddPost](https://res.cloudinary.com/dbjm35bjd/image/upload/v1717013067/Screenshot_2024-05-29_at_21.00.30_aghqeu.png)
+
+
+- **Liked:** This allows users to see what posts they have liked and revisit their favorite posts.
+
+![Liked](https://res.cloudinary.com/dbjm35bjd/image/upload/v1717013077/Screenshot_2024-05-29_at_21.02.52_g9rpfo.png)
+
+### Authentication
+
+Users who have not created an account can click on the Sign-Up link on the Navigation Bar to create a user account. The standard dj-rest/auth/registration user account signup process is used for this.
+
+
+If a user has an Animal Gram user account, they can click on the Sign-In menu option in the Navigation Bar to sign into their account.
+
+To sign out, already signed-in users can access the Sign-Out option in the Navigation Bar.
+
+### Posts Page / Homepage
+
+The Posts Page, which also serves as the website Homepage, consists of three main React components:
+
+- **Popular Profiles Component**
+
+![Popular Profiles](https://res.cloudinary.com/dbjm35bjd/image/upload/v1717013067/Screenshot_2024-05-29_at_20.58.20_mefmmu.png)
+
+- **Posts**
+
+![Posts](https://res.cloudinary.com/dbjm35bjd/image/upload/v1717013070/Screenshot_2024-05-29_at_20.58.40_rb6m5w.png)
+
+#### Popular Profiles Component
+
+The Popular Profiles Component is a prominent feature throughout the website. On larger screens, it appears to the right of all pages, while on smaller screens, it occupies the top section. This component utilizes a filter to rank all site users by their follower count, listing the top ten profiles on larger screens and the top four on smaller screens.
+
+For users who aren't logged in, the component displays the profile avatar and the username. In contrast, logged-in users have the additional option to follow or unfollow the profile. Clicking on any profile avatar allows the user to view the complete profile page of that individual.
+
+#### Posts
+
+The Posts section showcases all posts created by users on the platform. Posts are retrieved from the API, sorted by creation date, with the most recent posts featured at the top in descending order.
+
+Each post includes details about the user who created it, the date of creation, the written content, an image, location, and relevant tags. Users can also view the number of likes and comments on each post. Clicking on the post image or the comments count takes the user to the post's individual page.
+
+
+### Feed
+
+To access the feed pages, simply click on the 'Feed' option in the Navigation Bar. The Posts Feed page has a familiar layout reminiscent of the Posts Page. However, its function diverges in how content is filtered. On the feed page, it pulls all Posts from the API, but the magic happens with the applied filter. 
+
+![Feed](https://res.cloudinary.com/dbjm35bjd/image/upload/v1717013073/Screenshot_2024-05-29_at_21.03.27_qdn6ea.png)
+
+This filter ensures that only Posts created by profiles that the logged-in user follows are displayed. Keep in mind that this page is exclusively accessible to logged-in users. In cases where a user isn't following any profiles yet, a 'No Results Found' message will be thoughtfully presented.
+
+### Create a Post
+
+Logged-in users have the privilege to share their thoughts and experiences with the community by creating new posts. By selecting the 'Add Post' option from the Navigation Bar, users are seamlessly directed to the Create Post form. 
+![AddPost](https://res.cloudinary.com/dbjm35bjd/image/upload/v1717013067/Screenshot_2024-05-29_at_21.00.30_aghqeu.png)
+
+
+![Createapost](https://res.cloudinary.com/dbjm35bjd/image/upload/v1717013073/Screenshot_2024-05-29_at_21.03.27_qdn6ea.png)
+This user-friendly form demands all essential fields to be filled, and it's worth noting that uploading an image is mandatory for successful submission. After submitting the form, the newly created post is swiftly available on the Posts Page. Users will be automatically redirected to the post's individual page, where they can view their masterpiece. Additionally, for every post created, the user's posts count increases, proudly displayed in their profile page stats for others to see their engagement and contribution.
+
+### Post Page
+
+The Post Page offers a detailed view of an individual post, presenting both post details and comments. Users can access this page by clicking on the post image or comment icon from the Posts Page or Posts Feed. If the user is the post's owner, they gain the ability to edit or delete the post by selecting the three dots next to the post's creation date.
+
+![Post Page](https://res.cloudinary.com/dbjm35bjd/image/upload/v1717013070/Screenshot_2024-05-29_at_20.58.40_rb6m5w.png)
+
+![Post Page Comment](https://res.cloudinary.com/dbjm35bjd/image/upload/v1717013073/Screenshot_2024-05-29_at_21.02.23_adebef.png)
+
+
+Beneath the post details lies the comments section. In the absence of comments, users encounter a message indicating no comments have been posted. When users are not logged in, they can read published comments but cannot create comments until they log in. Once logged in, a comment form appears above existing comments, allowing users to share their thoughts on the post.
+
+Choosing the "Delete" option removes the post from the API, making it invisible on the platform. Users are then redirected to the Post Create form, offering the option to create a new post. Opting for "Edit" redirects users to the Post Edit Form, pre-populated with the existing post's information. Users can modify this information, save the changes, and return to the Post Page, now featuring the updated post.
+
+### Comments
+
+On each Post Page, a "Post a Comment" button invites users to engage with that specific post. The comment form includes a single text input field for users to compose their comments. All fields are required, ensuring that comments are not published unless text is provided. Upon publishing a comment, the comment count visibly increments for that post.
+
+![Comments](https://res.cloudinary.com/dbjm35bjd/image/upload/v1717013073/Screenshot_2024-05-29_at_21.02.23_adebef.png)
+
+Comment owners who wish to make modifications to their comments after publishing have the option to edit or delete comments by using the three dots menu located to the right of the published comment.
+
+### Profile Page
+
+The Profile Page provides an in-depth look at a user's identity and activity on Animal Gram. Users can access Profile Pages by clicking on profile avatars found throughout the site, including popular profiles, post authors, and comments. Users can also access their own Profile Page via the authentication icon in the Navigation Bar.
+
+![Profile Page](https://res.cloudinary.com/dbjm35bjd/image/upload/v1717013067/Screenshot_2024-05-29_at_21.01.04_op31jr.png)
+
+![Profile Edit Page](https://res.cloudinary.com/dbjm35bjd/image/upload/v1717013067/Screenshot_2024-05-29_at_21.01.22_h63q2q.png)
+
+A user's Profile Page displays various information, including:
+
+- Profile picture
+- Username
+- Profile Stats
+- About section
+- Published posts
+
+When a user signs up for Animal Gram, a basic profile is automatically created with a username, password, and default avatar image. The only information initially generated on the profile page is the user's Profile Stats, which encompass:
+
+- The number of posts the user has published
+- The number of profiles the user is following
+- The number of profiles following the user
+
+The user's "About" section remains blank until the user visits their own Profile Page and chooses to edit the profile by adding personal details. Clicking on the "Edit Profile" option leads them to a form where they can update their profile picture and about section. Users have the flexibility to share as much or as little personal information as they prefer.
+
+Each profile also includes a "Follow" button, allowing other users to follow or unfollow that profile. The user's published posts are listed on their Profile Page, which can be accessed through React-Bootstrap tabs for easy navigation.
+
+### Reusable React Components
+
+1. **Asset**
+    - This versatile component is used throughout the website to load images, display messages, and indicate loading spinners.
+
+2. **Avatar**
+    - The Avatar component is consistently utilized to display user avatars across different pages of the website.
+
+3. **NavBar**
+    - The NavBar component serves as the primary navigation bar and is consistently present on every page of the website.
+
+4. **Not Found**
+    - The Not Found component is presented to users when they attempt to access an invalid URL.
+
+5. **MoreDropdown**
+    - Reused to enable users to edit and delete various items, such as posts and comments.
+
+### Future Features
+
+1. **Real-time User Interactions**
+   - Enjoy real-time chat, notifications, and user-to-user messaging for seamless communication.
+2. **Personalized User Profiles**
+   - Customize your profile further, adding new sections and options to make it uniquely yours.
+3. **Mobile App Development**
+   - Stay tuned for the mobile app, extending accessibility to your favorite social platform.
