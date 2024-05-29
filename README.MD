@@ -455,3 +455,22 @@ Please click [here](TESTING.md) to read more about AnimalGram's testing
 - [CSS3](https://en.wikipedia.org/wiki/CSS) - Provides the styling for the website
 - [JavaScript](https://en.wikipedia.org/wiki/JavaScript) - Provides interactive elements of the website
 - [React.js](https://en.wikipedia.org/wiki/React_(software)) - Provides the base for the frontend components
+
+### Frameworks, Software and Web Applications
+
+- [React Bootstrap](https://react-bootstrap.github.io/) - A CSS framework that helps build solid, responsive, mobile-first sites
+- [Balsamiq](https://balsamiq.com/) - Used to create the wireframes
+- [Colors.co](https://coolors.co/) - For Colour Pallette
+- [Github](https://github.com/) - Used to host the repository, store the commit history and manage the project board containing user stories
+- [Heroku](https://en.wikipedia.org/wiki/Heroku) - A cloud platform that the application is deployed to
+- [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) - Used to test site performance
+- [Logo](https://canva.com) - Used to generate the Animal Gram logo
+- [Favicon](https://favicon.io/) - Used to create the favicon
+- [Google Chrome DevTools](https://developer.chrome.com/docs/devtools/) - Used to debug and test responsiveness
+- [Google Fonts](https://fonts.google.com/specimen/DM+Sans) - Used to import the website font 
+- [Cloudinary](https://cloudinary.com/) - A service that hosts image files in the project.
+- [HTML Validation](https://validator.w3.org/) - Used to validate HTML code
+- [CSS Validation](https://jigsaw.w3.org/css-validator/) - Used to validate CSS code
+- [JSHint Validation](https://jshint.com/) - Used to validate JavaScript code
+- [Unsplash](https://unsplash.com/) - Free stock image provider for posts and avatars that were uploaded 
+- [Font Awesome](https://fontawesome.com/) - Used for icons across UI
