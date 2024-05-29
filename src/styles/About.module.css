@@ -1,38 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 .container {
-    padding: 20px;
+  padding: 20px;
 }
-  
+
 .heading {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    font-family: "Lobster", sans-serif;
-    display: flex;
-    justify-content: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-family: "Lobster", sans-serif;
+  display: flex;
+  justify-content: center;
 }
 
 .subheading {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 .paragraph {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    margin-bottom: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
 }
 
 .featuresList {
-    list-style-type: disc;
-    margin-left: 20px;
+  list-style-type: disc;
+  margin-left: 20px;
 }
 
 .featuresList li {
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .bold {
-    font-weight: bold;
+  font-weight: bold;
 }
 
+.carousel {
+    border: #b08d79 solid 5px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
   
+  .carouselItem {
+    width: 100%;
+  }
+  
+  .carouselImage {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }

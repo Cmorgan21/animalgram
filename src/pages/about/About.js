@@ -1,7 +1,17 @@
 import React from 'react';
+import Carousel from 'react-bootstrap/Carousel';
 import styles from '../../styles/About.module.css';
+import image1 from '../../assets/ss_1.jpg';
+import image2 from '../../assets/ss_2.jpg';
+import image3 from '../../assets/ss_3.jpg';
 
 export default function AboutPage() {
+  const images = [
+    { src: image1, alt: 'Image 1' },
+    { src: image2, alt: 'Image 2' },
+    { src: image3, alt: 'Image 3' },
+  ];
+
   return (
     <div className={styles.container}>
       <h1 className={styles.heading}>AnimalGram</h1>
@@ -12,6 +22,17 @@ export default function AboutPage() {
         have a playful puppy, a curious cat, a talkative parrot, or any other animal companion,
         AnimalGram is the perfect place to showcase their unique personalities and adorable moments.
       </p>
+      <Carousel className={styles.carousel}>
+        {images.map((image, index) => (
+          <Carousel.Item key={index} className={styles.carouselItem}>
+            <img
+              className={styles.carouselImage}
+              src={image.src}
+              alt={image.alt}
+            />
+          </Carousel.Item>
+        ))}
+      </Carousel>
       <h3 className={styles.subheading}>Features</h3>
       <ul className={styles.featuresList}>
         <li className={styles.paragraph}><span className={styles.bold}>Post Updates:</span> Share photos and updates about your pets.</li>
