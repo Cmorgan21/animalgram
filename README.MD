@@ -342,3 +342,51 @@ Each profile also includes a "Follow" button, allowing other users to follow or 
    - Customize your profile further, adding new sections and options to make it uniquely yours.
 3. **Mobile App Development**
    - Stay tuned for the mobile app, extending accessibility to your favorite social platform.
+
+   ## The Skeleton Plane
+
+### Wireframes
+
+#### Home Page
+![Home Page](https://res.cloudinary.com/dbjm35bjd/image/upload/v1717017620/Screenshot_2024-05-29_at_22.18.13_q2sxmy.png)
+
+#### About Page
+![About Page](https://res.cloudinary.com/dbjm35bjd/image/upload/v1717017619/Screenshot_2024-05-29_at_22.18.27_jyzhyj.png)
+
+#### Search Page
+![Search Page](https://res.cloudinary.com/dbjm35bjd/image/upload/v1717017618/Screenshot_2024-05-29_at_22.18.40_xxuvhf.png)
+
+#### Feed Page
+![Feed Page](https://res.cloudinary.com/dbjm35bjd/image/upload/v1717017620/Screenshot_2024-05-29_at_22.18.13_q2sxmy.png)
+
+#### Like Page
+![Like Page](https://res.cloudinary.com/dbjm35bjd/image/upload/v1717017620/Screenshot_2024-05-29_at_22.18.13_q2sxmy.png)
+
+#### Add Post Page
+![Add Post Page](https://res.cloudinary.com/dbjm35bjd/image/upload/v1717017619/Screenshot_2024-05-29_at_22.18.59_rssedy.png)
+
+#### SignIn and Up Page
+![Sign In and Up Page](https://res.cloudinary.com/dbjm35bjd/image/upload/v1717017618/Screenshot_2024-05-29_at_22.19.13_q9rg0e.png)
+
+#### Profile Page
+![Profile Page](https://res.cloudinary.com/dbjm35bjd/image/upload/v1717017618/Screenshot_2024-05-29_at_22.19.33_hjcsvo.png)
+
+#### Profile Edit Page
+![Profile Edit Page](https://res.cloudinary.com/dbjm35bjd/image/upload/v1717017619/Screenshot_2024-05-29_at_22.19.51_tkzntq.png)
+
+### Database Structure
+
+I've meticulously crafted the database structure for the Animal Gram Backend API. Here are the core models:
+
+- **Users:** These are slightly customized from Django's standard User model to align with our requirements.
+- **Profiles:** Automatically generated upon user registration, these profiles are tailored to encompass essential information.
+- **Posts:** Users can create posts, which are shared on the platform.
+- **Likes:** Indicate if a user appreciates another user's post.
+- **Comments:** Enable users to provide feedback and commentary on posts.
+- **Followers:** Empower users to follow each other within the platform.
+
+To understand the relationships between these models, please refer to the Entity-Relationship diagram:
+
+![Entity Relationship Diagram](https://res.cloudinary.com/dbjm35bjd/image/upload/v1717014871/er_diagram_1_hcli7m.png)
+
+ER Diagram
