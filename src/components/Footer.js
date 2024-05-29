@@ -22,13 +22,12 @@ const Footer = () => {
       <div className={styles.column}>
         <h3>Contact</h3>
         <div className={styles.contact}>
-          <p>Email: info@animalgram.com</p>
-          <p>Phone: (123) 456-7890</p>
+          <p>Email: animalgram@outlook.com</p>
           <p>Address: 123 Animal St, Pet City</p>
         </div>
       </div>
       <div className={styles.column}>
-        <h3>Company</h3>
+        <h3>AnimalGram Co</h3>
         <img 
         src={logo} 
         alt="Company Logo" 
