@@ -515,3 +515,21 @@ The libraries used in this project are located in the requirements.txt file and 
 - [pytz](https://pypi.org/project/pytz/) - This is a set of Python packages to support use of the OpenID decentralized identity system in your application, update to Python 3.
 - [requests-oauhlib](https://pypi.org/project/requests-oauthlib/) - Provides first-class OAuth library support for Requests.
 - [sqlparse](https://pypi.org/project/sqlparse/) - sqlparse is a non-validating SQL parser for Python.
+
+## Deployment Frontend
+
+### Deployment to Heroku
+
+1. In your Heroku account, select Create New App, and give it a unique name related to your project.
+2. Select a region corresponding to where you live and click 'Create App'.
+3. Head into the 'Deploy' tab, select GitHub as the 'deployment method', find your project repository and click 'Connect' your Heroku app to the GitHub repository.
+4. Fill out config vars needed.
+5. Click 'Deploy branch' to trigger Heroku to start building the application.
+6. Once you see the message saying 'build succeeded', you can click 'Open App' to see your application in the browser.
+
+### Clone this Project Repository
+
+Go into local IDE and within the terminal 
+```
+git clone https://github.com/linkofrepository
+```
