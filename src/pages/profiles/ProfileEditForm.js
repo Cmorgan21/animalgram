@@ -66,22 +66,27 @@ const ProfileEditForm = () => {
     formData.append("name", name);
     formData.append("content", content);
 
-    if (imageFile?.current?.files[0]) {
-      formData.append("image", imageFile?.current?.files[0]);
+    if (imageFile.current && imageFile.current.files[0]) {
+        formData.append("image", imageFile.current.files[0]);
     }
 
     try {
-      const { data } = await axiosReq.put(`/profiles/${id}/`, formData);
-      setCurrentUser((currentUser) => ({
-        ...currentUser,
-        profile_image: data.image,
-      }));
-      history.goBack();
+        const { data } = await axiosReq.put(`/profiles/${id}/`, formData, {
+            headers: {
+                'Content-Type': 'multipart/form-data',
+            },
+        });
+        setCurrentUser((currentUser) => ({
+            ...currentUser,
+            profile_image: data.image,
+        }));
+        history.goBack();
     } catch (err) {
-      // console.log(err);
-      setErrors(err.response?.data);
+        // Log error details to the console for debugging
+        console.error("Upload error:", err);
+        setErrors(err.response?.data);
     }
-  };
+};
 
   const textFields = (
     <>
