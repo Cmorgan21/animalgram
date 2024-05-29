@@ -168,8 +168,19 @@ Subsequently, the “should-have” features were addressed, followed by the inc
 
 | Category     | User Story                                                                                     | Completed |
 |--------------|-------------------------------------------------------------------------------------------------|-----------|
-| Filter Posts by Category | In my role as a developer/superuser, I can enable category-based post filtering, allowing users to view posts related to a specific category. | [X]  |
-| Posts based on Liked History | Provide users with posts similar to the ones they frequently like to give them more suggested content. | [X]  |
-| View Followed Profiles Content | Being a developer/superuser, I can provide a feature that allows users to see posts exclusively from profiles they follow. | [X]  |
+| Filter Posts by Category | In my role as a developer/superuser, I can enable category-based post filtering, allowing users to view posts related to a specific category. | []  |
+| Posts based on Liked History | Provide users with posts similar to the ones they frequently like to give them more suggested content. | []  |
+| View Followed Profiles Content | Being a developer/superuser, I can provide a feature that allows users to see posts exclusively from profiles they follow. | []  |
 | Chat Functionality | As a developer/superuser, I can implement chat functionality, enabling users to communicate with each other and message in real time. |
+
+## The Structure Plane
+
+### Project Structure
+
+Animal Gram exhibits two user experiences contingent upon the user's authentication status. Whether logged in or logged out, these states dictate varying content accessibility and user capabilities.
+
+For logged-out users, the navigation bar provides access to the Home, About, Sign In, and Sign Up pages. Upon logging in, the user gains access to additional features within the Feed, encompassing Posts, Liked, Following, and the Profile Page and also adding and changing posts.
+
+The transition to a logged-in state empowers users with the ability to perform actions beyond the scope of logged-out users:
+Logged-in users can create posts, modify their profile details, including their username and password, manage their comments, express their preference for posts through likes and unlikes, and expand their network by following or unfollowing other users.
 
