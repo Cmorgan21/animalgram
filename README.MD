@@ -1,12 +1,12 @@
-<h1 align="center">Animal Gram</h1>
+# Animal Gram
 
-![Responsive Mockup]()
+![Responsive Mockup](https://res.cloudinary.com/dbjm35bjd/image/upload/v1717018761/amiresponsive_ol6ode.png)
 
-### Project Objective
+## Project Objective
 
-**Animal Gram** is an innovative social media platform where users can share photos and moments of their pets and favorite animals. The aim is to create a space where animal lovers can connect, share, and inspire each other. Users can create their own profiles, post photos, follow other users, and engage in conversations about their beloved pets.
+**Animal Gram** is an innovative social media platform where users can share photos and moments of their pets and favorite animals. Our mission is to create a space where animal lovers can connect, share, and inspire each other. Users can create their own profiles, post photos, follow other users, and engage in conversations about their beloved pets.
 
-View the live project [AnimalGram](https://animalgram-880788cab506.herokuapp.com/).
+View the live project [here](https://animalgram-880788cab506.herokuapp.com/)
 
 ## Table Of Contents
 - [UX](#ux)
