@@ -9,7 +9,7 @@
 View the live project [here](https://animalgram-880788cab506.herokuapp.com/)
 
 ## Table Of Contents
-- [UX](#ux)
+- [User Experience Design (UX)](#user-experience-design-ux)
 - [The Strategy Plane](#the-strategy-plane)
 - [Project Objective](#project-objective)
 - [Agile Project Management](#agile-project-management)
@@ -28,6 +28,7 @@ View the live project [here](https://animalgram-880788cab506.herokuapp.com/)
 - [Testing](#testing)
 - [Deployment](#deployment)
 - [Credits](#credits)
+
 
 ## UX
 
