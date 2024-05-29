@@ -442,3 +442,16 @@ These fonts are sourced from [Google Fonts](https://fonts.google.com/).
 
 
 - The icons were imported from [Font Awesome](https://fontawesome.com/).
+
+## Testing
+
+Please click [here](TESTING.md) to read more about AnimalGram's testing
+
+## Technologies Used Frontend
+
+### Languages
+
+- [HTML5](https://en.wikipedia.org/wiki/HTML) - Provides the content and structure for the website
+- [CSS3](https://en.wikipedia.org/wiki/CSS) - Provides the styling for the website
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript) - Provides interactive elements of the website
+- [React.js](https://en.wikipedia.org/wiki/React_(software)) - Provides the base for the frontend components
