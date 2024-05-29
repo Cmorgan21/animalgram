@@ -93,7 +93,7 @@ const NavBar = () => {
   const searchIcon = (
     <NavLink
       className={styles.NavLink}
-      activeClassName={styles.SearchIconActive}
+      activeClassName={styles.Active}
       to="/search"
     >
       <i className={`fas fa-search ${styles.SearchIcon}`}></i>
