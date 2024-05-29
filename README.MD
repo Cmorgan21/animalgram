@@ -684,3 +684,18 @@ To clone and set up this project you need to follow the steps below.
 - ````python3 manage.py migrate```` - This will do the necessary migrations.
 - `python3 manage.py runserver` - If everything i setup correctly the project is now live locally.
 
+## Credits
+
+- [React Bootstrap documentation](https://react-bootstrap.netlify.app/) - Documentation used for styling and to build responsive web pages.
+- [Code Institute](https://codeinstitute.net/) - Walkthrough modules for the Moments app.
+- [React documentation](https://legacy.reactjs.org/docs/getting-started.html) - Everything you need to know about React.
+- [Stack Overflow](https://stackoverflow.com/) - For troubleshooting and FAQ.
+- [W3Schools](https://www.w3schools.com/) - Online Web Tutorials.
+- [YouTube](https://www.youtube.com) - Extensive in-depth tutorials for React and Django Rest to reiterate the principles and using both languages together.
+
+## Acknowledgments
+
+- I'd like to thank Code Institute for the foundation of Django Rest and React fundamentals for the foundation knowledge and project.
+- Slack community for bugs and errors that I struggled to find on the internet.
+- ChatGPT for specific knowledge on the way specific things work such as serializers.
+
